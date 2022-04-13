@@ -109,6 +109,55 @@ export const NavProductsIcon = styled(IoIosArrowDropdown)`
   }
 `;
 
+// Dark Mode Toggle
+export const DarkModeToggle = styled.label`
+  height: 2.8rem;
+  border-radius: 100px;
+  width: 100%;
+  background-color: rgba(0,0,0,.1);
+  border-radius: 100px;
+  position: relative;
+  margin: 1.8rem 0 4rem 0; 
+  cursor: pointer;
+`;
+
+export const ToggleDiv = styled.div`
+  height: 2.8rem;
+  border-radius: 100px;
+  position: absolute;
+  width: 50%;
+  background-color: #fff;
+  box-shadow: 0 2px 15px rgba(0,0,0,.15);
+  transition: transform .3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+`;
+
+export const NamesDiv = styled.div`
+  font-size: 90%;
+  font-weight: bolder;
+  width: 65%;
+  margin-left: 17.5%;
+  margin-top: .5%;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  user-select: none;
+`;
+
+export const DarkP = styled.p`
+  opacity: .5;
+`;
+
+// [type="checkbox"]:checked + .app .toggle{
+//   transform: translateX(100%);
+//   background-color: #34323D;
+// }
+// [type="checkbox"]:checked + .app .dark{
+//   opacity: 1;
+// }
+// [type="checkbox"]:checked + .app .light{
+//   opacity: .5;
+// }
+
 
 // Social Icons 
 

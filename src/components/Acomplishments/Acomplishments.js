@@ -4,10 +4,10 @@ import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalCompon
 import { Box, Boxes, BoxNum, BoxText } from './AcomplishmentsStyles';
 
 const data = [
-  { number: 20, text: 'Open Source Projects' },
-  { number: 50, text: 'Shell Scripts', },
+  { number: 2000, text: 'Students mentored in React' },
+  { number: 10, text: 'Online Courses Created', },
   { number: 250000, text: 'Downloads', },
-  { number: 150, text: 'Github Stars', }
+  { number: 900, text: 'More doors than wheels', }
 ];
 
 const Acomplishments = () => (

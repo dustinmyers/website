@@ -6,6 +6,7 @@ import Technologies from '../components/Technologies/Technologies';
 import Timeline from '../components/TimeLine/TimeLine';
 import { Layout } from '../layout/Layout';
 import { Section } from '../styles/GlobalComponents';
+import { jobHistory, projects } from '../constants/constants';
 
 const Home = () => {
   return (
@@ -14,7 +15,8 @@ const Home = () => {
         <Hero />
         <BgAnimation />
       </Section>
-      <Projects />
+      <Projects data={jobHistory} header="Professional Work" />
+      <Projects data={projects} header="Personal Projects" />
       <Technologies />
       <Timeline />
       <Acomplishments />
