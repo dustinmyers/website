@@ -9,7 +9,7 @@ export const Container = styled.div`
   padding: 1rem;
   padding-top: 2rem;
 
-  @media ${(props) => props.theme.breakpoints.sm} {
+  @media screen and (max-width: 640px) {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(2, 60px);
@@ -22,7 +22,7 @@ export const Div1 = styled.div`
   display: flex;
   flex-direction: row;
   align-content: center;
-  @media ${(props) => props.theme.breakpoints.sm} {
+  @media screen and (max-width: 640px) {
     grid-area: 1 / 1 / 2 / 3;
   }
 `;
@@ -31,7 +31,7 @@ export const Div2 = styled.div`
   display: flex;
   margin-top: 0.75em;
   justify-content: space-between;
-  @media ${(props) => props.theme.breakpoints.sm} {
+  @media screen and (max-width: 640px) {
     grid-area: 2 / 2 / 3 / 5;
   }
 `;
@@ -40,24 +40,25 @@ export const Div3 = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  @media ${(props) => props.theme.breakpoints.sm} {
+  @media screen and (max-width: 640px) {
     align-items: center;
     grid-area: 1 / 4 / 2 / 6;
   }
+  padding-right: 65px;
 `;
 
 // Navigation Links
 export const NavLink = styled.a`
   font-size: 2rem;
   line-height: 32px;
-  color: rgba(255, 255, 255, 0.75);
+  color: var(--primary1);
   transition: 0.4s ease;
   &:hover {
-    color: #fff;
+    color: var(--link);
     opacity: 1;
     cursor: pointer;
   }
-  @media ${(props) => props.theme.breakpoints.sm} {
+  @media screen and (max-width: 640px) {
     padding: 0.5rem;
     font-size: 1.7rem;
   }
@@ -72,7 +73,7 @@ export const ContactDropDown = styled.button`
   font-size: 1.7rem;
 
   line-height: 32px;
-  color: rgba(255, 255, 255, 0.75);
+  color: var(--primary1);
   cursor: pointer;
   transition: 0.3s ease;
 
@@ -80,13 +81,13 @@ export const ContactDropDown = styled.button`
     outline: none;
   }
   &:hover {
-    color: #fff;
+    color: var(--link);
   }
 
-  @media ${(props) => props.theme.breakpoints.sm} {
+  @media screen and (max-width: 640px) {
     padding: 0.4rem 0;
   }
-  @media ${(props) => props.theme.breakpoints.md} {
+  @media screen and (max-width: 768px) {
     padding: 0;
   }
 `;
@@ -103,7 +104,7 @@ export const NavProductsIcon = styled(IoIosArrowDropdown)`
     opacity: 1;
   }
 
-  @media ${(props) => props.theme.breakpoints.sm} {
+  @media screen and (max-width: 640px) {
     margin: 2px 0 0 2px;
     width: 15px;
   }
@@ -163,13 +164,12 @@ export const DarkP = styled.p`
 
 export const SocialIcons = styled.a`
 transition: 0.3s ease;
-color: white;
+color: var(--primary1);
 border-radius: 50px;
   padding: 8px;
 &:hover {
-    background-color: #212d45;
     transform: scale(1.2);
     cursor: pointer;
-    
+    color: var(--link);
   }
 `

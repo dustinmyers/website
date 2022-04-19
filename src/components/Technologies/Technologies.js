@@ -14,7 +14,7 @@ const Technologies = () => (
       {Skills.map((Skill) => (
         <ListItem key={Skill.slug}>
           <picture>
-            <Skill.Component size="3rem" />
+            <Skill.Component size="3rem" style={{ color: 'var(--card-header-color)' }} />
           </picture>
           <ListContainer>
             <ListTitle>{Skill.title}</ListTitle>

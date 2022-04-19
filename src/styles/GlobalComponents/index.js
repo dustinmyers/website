@@ -11,12 +11,12 @@ export const Section = styled.section`
   overflow: hidden;
   grid-template-columns: 1fr 1fr;
 
-  @media ${(props) => props.theme.breakpoints.md} {
+  @media screen and (max-width: 768px) {
     padding: 24px 48px 0;
     flex-direction: column;
   }
 
-  @media ${(props) => props.theme.breakpoints.sm} {
+  @media screen and (max-width: 640px) {
     padding: ${(props) => props.nopadding ? "0" : "16px 16px 0"} ;
 
     width: calc(100vw - 32px);
@@ -30,20 +30,20 @@ export const SectionTitle = styled.h2`
   line-height: ${(props) => props.main ? '72px' : '67px'};
   width: max-content;
   max-width: 100%;
-  background: linear-gradient(121.57deg, #FFFFFF 18.77%, rgba(255, 255, 255, 0.66) 60.15%);
+  background: var(--primary1);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 16px;
   padding: ${(props) => props.main ? '58px 0 16px' : '0'};
-
-  @media ${props => props.theme.breakpoints.md}{
+  transition: .8s ease;
+  @media screen and (max-width: 768px){
     font-size: ${(props) => props.main ? '56px' : '48px'};
     line-height: ${(props) => props.main ? '56px' : '48px'};
     margin-bottom: 12px;
     padding: ${(props) => props.main ? '40px 0 12px' : '0'};
   }
 
-  @media ${props => props.theme.breakpoints.sm}{
+  @media screen and (max-width: 640px){
     font-size: 32px;
     line-height: 40px;
     font-size: ${(props) => props.main ? '28px' : '32px'};
@@ -60,16 +60,16 @@ export const SectionText = styled.p`
   line-height: 40px;
   font-weight: 300;
   padding-bottom: 3.6rem;
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--text-color);
 
-  @media ${(props) => props.theme.breakpoints.md} {
+  @media screen and (max-width: 768px) {
     max-width: 670px;
     font-size: 20px;
     line-height: 32px;
     padding-bottom: 24px;
   }
 
-  @media ${(props) => props.theme.breakpoints.sm} {
+  @media screen and (max-width: 640px) {
     font-size: 16px;
     line-height: 24px;
     padding-bottom: 16px;
@@ -88,12 +88,12 @@ export const SectionDivider = styled.div`
 
     margin: ${(props) => props.divider ? "4rem 0" : ""};
 
-  @media ${(props) => props.theme.breakpoints.md} {
+  @media screen and (max-width: 768px) {
     width: 48px;
     height: 4px;
   }
 
-  @media ${(props) => props.theme.breakpoints.sm} {
+  @media screen and (max-width: 640px) {
     width: 32px;
     height: 2px;
   }
@@ -103,15 +103,15 @@ export const SectionSubText = styled.p`
   font-weight: 300;
   font-size: 18px;
   line-height: 32px;
-  color: rgba(255, 255, 255, 0.75);
-
-@media ${(props) => props.theme.breakpoints.md} {
+  color: var(--text-color);
+  transition: .8s ease;
+@media screen and (max-width: 768px) {
     max-width: 672px;
     font-size: 16px;
     line-height: 25px;
   }
 
-  @media ${(props) => props.theme.breakpoints.sm} {
+  @media screen and (max-width: 640px) {
     font-size: 14px;
     line-height: 22px;
   }
@@ -147,7 +147,7 @@ export const SecondaryBtn = styled.button`
     box-shadow: inset 0px 2px 1px rgba(46, 49, 55, 0.15), inset 0px 0px 4px rgba(20, 20, 55, 0.3);
   }
 
-  @media ${(props) => props.theme.breakpoints.md}{
+  @media screen and (max-width: 768px){
     margin-top: 24px; 
     margin-bottom: 64px;
     padding: 16px 24px;
@@ -156,7 +156,7 @@ export const SecondaryBtn = styled.button`
     line-height: 20px;
   }
 
-  @media ${(props) => props.theme.breakpoints.sm} {
+  @media screen and (max-width: 640px) {
     margin-top: 16px;
     margin-bottom: 40px;
     padding: 8px 16px;
@@ -184,14 +184,14 @@ export const ButtonBack = styled.div`
   overflow: hidden;
   opacity: ${({ disabled }) => disabled ? '.5' : '1'};
   
-  @media ${(props) => props.theme.breakpoints.md} {
+  @media screen and (max-width: 768px) {
     width: ${({ alt }) => alt ? '150px' : '184px'};
     height: ${({ alt }) => alt ? '52px' : '48px'};
     font-size: ${({ alt }) => alt ? '20px' : '16px'};
     margin-bottom: ${({ alt }) => alt ? '0' : '64px'};
   }
   
-  @media ${(props) => props.theme.breakpoints.sm} {
+  @media screen and (max-width: 640px) {
     width: 100%;
     height: 32px;
     font-size: 14px;
@@ -236,11 +236,11 @@ export const ButtonFront = styled.button`
     box-shadow: inset 0px 2px 1px rgba(46, 49, 55, 0.15), inset 0px 0px 4px rgba(20, 20, 55, 0.3);
   }
 
-  @media ${(props) => props.theme.breakpoints.md} {
+  @media screen and (max-width: 768px) {
     font-size: ${({ alt }) => alt ? '20px' : '16px'};
   }
 
-  @media ${(props) => props.theme.breakpoints.sm} {
+  @media screen and (max-width: 640px) {
     font-size: 14px;
   }
 `
@@ -258,11 +258,11 @@ export const LinkContainer = styled.div`
     cursor: pointer;
   }
 
-  @media ${(props) => props.theme.breakpoints.md} {
+  @media screen and (max-width: 768px) {
     margin-left: ${({ large }) => large ? '16px' : '8px'};
 
   }
-  @media ${(props) => props.theme.breakpoints.sm} {
+  @media screen and (max-width: 640px) {
     margin-left: ${({ large }) => large ? '0' : '8px'};
   }
 `
@@ -271,15 +271,16 @@ export const LinkIconImg = styled.div`
   display: flex;  
   height: ${({ large }) => large ? '32px' : '24px'};
 
-  @media ${(props) => props.theme.breakpoints.md} {
+  @media screen and (max-width: 768px) {
     height: ${({ nav }) => nav ? '16px' : '24px'};
   }
 
-  @media ${(props) => props.theme.breakpoints.sm} {
+  @media screen and (max-width: 640px) {
     height: ${({ large }) => large ? '32px' : '16px'};
   }
 `
 
 export const Link = styled.a`
-  color: ${(props) => props.theme.colors.link}
+  color: var(--link);
+  transition: .8s ease;
 `;

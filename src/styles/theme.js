@@ -1,13 +1,13 @@
-import { ThemeProvider } from 'styled-components';
+import { UserThemeProvider } from '../components/UserThemeContext';
 
 import theme from "../themes/default";
 import GlobalStyles from './globals';
 
 const Theme = ({ children }) => (
-  <ThemeProvider theme={theme}>
+  <UserThemeProvider>
     <GlobalStyles />
     {children}
-  </ThemeProvider>
+  </UserThemeProvider>
 );
 
 export default Theme;

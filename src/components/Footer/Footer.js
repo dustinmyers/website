@@ -21,7 +21,7 @@ const Footer = () => {
       </LinkList>
       <SocialIconsContainer>
         <CompanyContainer>
-          <Slogan>&copy; 2021 <Link href="https://dustinmyers.dev">  Dustin Myers</Link> . All rights reserved.</Slogan>
+          <Slogan>&copy; 2021 <Link href="https://dustinmyers.dev">  Dustin Myers</Link> - All rights reserved. Bonus points if you can find the bug in this site 🐛!</Slogan>
         </CompanyContainer>
         <SocialContainer>
           <SocialIcons href="https://github.com/dustinmyers">

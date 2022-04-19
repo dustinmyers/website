@@ -19,10 +19,10 @@ export const DropDownContainer = styled.div`
   transform-origin: top;
   transform: ${({ active }) => active ? 'scaleY(1)' : 'scaleY(.3)'};
 
-  @media ${(props) => props.theme.breakpoints.md} {
+  @media screen and (max-width: 768px) {
     top: 32px;
   }
-  @media ${(props) => props.theme.breakpoints.sm} {
+  @media screen and (max-width: 640px) {
     top: 24px;
   }
 `
@@ -31,7 +31,7 @@ export const DropDownItem = styled.a`
   display: flex;
   align-items: flex-start;
   cursor: pointer;
-  transition: .3s ease;
+  transition: .8s ease;
   padding: 12px 16px;
 
   &:hover {

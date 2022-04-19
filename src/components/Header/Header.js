@@ -1,5 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
+import { DarkToggle } from '../DarkToggle/DarkToggle';
+
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin, AiFillTwitterCircle } from 'react-icons/ai';
 import { Container, Div1, Div2, Div3, NavLink, DarkModeToggle, ToggleDiv, NamesDiv, DarkP, SocialIcons,  } from './HeaderStyles';
 
@@ -46,6 +48,10 @@ const Header = () => (
             <DarkP>Dark</DarkP>
           </NamesDiv>
         </DarkModeToggle> */}
+        <SocialIcons>
+              <DarkToggle />
+        </SocialIcons>
+
     </Div3>
   </Container>
 );

@@ -11,7 +11,7 @@ export const jobHistory = [
   },
   {
     title: 'Sendout Cards',
-    description: "A greeting card creation platform. Create cards with drag and drop features and a full-featured WYSIWYG. I also created a card sharing social media feature for users to share card layouts.",
+    description: "A greeting card creation platform. Create cards with drag and drop features and a WYSIWYG. I also created a card sharing social media feature for users to share layouts.",
     image: '/images/sendoutcards.png',
     tags: ['JavaScript', 'AngularJS', 'HTML/CSS', 'Django'],
     source: '',
@@ -24,7 +24,7 @@ export const jobHistory = [
 export const projects = [
   {
     title: 'JJs Journey',
-    description: "A blog site for my sister whose son is a cancer survivor. Utilizes Contentful as a CMS for ease of use for my sister to add new posts. Built with NextJS and deployed on the Vercel platform.",
+    description: "A blog site for my sister whose son is a cancer survivor. Utilizes Contentful as a CMS for ease of use for my sister to add new posts. Built with NextJS and deployed on Vercel.",
     image: '/images/jameson.png',
     tags: ['NextJS', 'ReactJS', 'Contentful', 'Serverless Functions'],
     source: '',
@@ -61,11 +61,12 @@ export const projects = [
 ]
 
 export const TimeLineData = [
-  { year: 2015, text: 'Started my journey as a new developer.', },
-  { year: 2015, text: 'AngularJS Developer at Sendoutcards, LLC.', },
-  { year: 2016, text: 'Learned Dart & Angular 2.0+ at Optiv Security.', },
+  { year: 2015, text: 'Started my journey learning to program at DevMountain.', },
+  { year: 2015, text: 'First job! AngularJS Developer at Sendoutcards, LLC.', },
+  { year: 2016, text: 'Learned Dart & Angular 2.0+ at Optiv Security and became head of design.', },
   { year: 2017, text: 'First Lead UI Engineer experience at Smartcare. Learned ReactJS.', },
   { year: 2018, text: 'Taught ReactJS and mentored thousands of students at Lambda School.', },
   { year: 2019, text: 'Promoted to Lead Frontend Instructor.', },
-  { year: 2020, text: 'Helped Lambda School scale from 25 to 200+ employees.', },
+  { year: 2020, text: 'Became and international speaker and spoke at 5 conferences in 2 years.'},
+  { year: 2021, text: 'Helped Lambda School scale from 25 to 200+ employees as a Team Lead.', },
 ];

@@ -8,7 +8,7 @@ export const FooterWrapper = styled.section`
   box-sizing: content-box;
 
 
-  @media ${props => props.theme.breakpoints.sm} {
+  @media screen and (max-width: 640px) {
     padding: 0 16px 48px;
     width: calc(100vw - 32px);
   }
@@ -17,24 +17,24 @@ export const FooterWrapper = styled.section`
 export const LinkItem = styled.a`
 	font-size: 18px;
 	line-height: 30px;
-	color: rgba(255, 255, 255, 0.75);
+	color: var(--primary1);
 	margin-bottom: 16px;
 	transition: .3s ease;
 	position: relative;
 	left: 0;
 
 	&:hover {
-		color: #fff;
 		left: 6px;
+		color: var(--card-header-color)
 	}
 
-	@media ${props => props.theme.breakpoints.md} {
+	@media screen and (max-width: 768px) {
 		font-size: 17px;
 		line-height: 28px;
 		display: flex;
 	}
 
-	@media ${props => props.theme.breakpoints.sm} {
+	@media screen and (max-width: 640px) {
 		font-size: 15px;
 		line-height: 14px;
 		margin-bottom: 8px;
@@ -44,35 +44,35 @@ export const LinkItem = styled.a`
 `
 
 export const SocialIconsContainer = styled.div`
-max-width: 1040px;
-display: flex;
-justify-content: space-between;
+	max-width: 1040px;
+	display: flex;
+	justify-content: space-between;
 
-@media ${props => props.theme.breakpoints.md}{
-  display: flex;
-  justify-content: space-between;
-}
+	@media screen and (max-width: 768px){
+		display: flex;
+		justify-content: space-between;
+	}
 
-@media ${props => props.theme.breakpoints.sm}{
-  display: flex;
-	width: 100%;
-  flex-direction: column;
-}
+	@media screen and (max-width: 640px){
+		display: flex;
+		width: 100%;
+		flex-direction: column;
+	}
 `
 
 export const CompanyContainer = styled.div`
-  display: flex;
+  	display: flex;
 	align-items:baseline;
 	flex-wrap: wrap;
 	margin-right: auto;
 	
 
-	@media ${props => props.theme.breakpoints.md}{
+	@media screen and (max-width: 768px){
 		flex-direction: column;
 		align-items: baseline;
 	}
 
-	@media ${props => props.theme.breakpoints.sm}{
+	@media screen and (max-width: 640px){
 		display: flex;
 		flex-direction: column;
 		margin: 0 0 32px;
@@ -82,19 +82,20 @@ export const CompanyContainer = styled.div`
 
 
 export const Slogan = styled.p`
-	color: rgba(255, 255, 255, 0.5);
+	color: var(--primary1);
 	min-width: 280px;
 	letter-spacing: 0.02em;
 	font-size: 18px;
 	line-height: 30px;
 	padding-top: 1rem;
+	transition: .8s ease;
 
-	@media ${props => props.theme.breakpoints.md}{
+	@media screen and (max-width: 768px){
 		font-size: 17px;
 		line-height: 28px;
 	}
 
-	@media ${props => props.theme.breakpoints.sm}{
+	@media screen and (max-width: 640px){
 		line-height: 22px;
 		font-size: 15px;
 		min-width: 100px;
@@ -103,9 +104,9 @@ export const Slogan = styled.p`
 
 export const SocialContainer = styled.div`
 	display: flex;
-  align-items: center;
+  	align-items: center;
 
-	@media ${props => props.theme.breakpoints.md}{
+	@media screen and (max-width: 768px){
 		justify-content: center;
 		padding-right: 16px;
 		flex-wrap: wrap;
@@ -114,22 +115,23 @@ export const SocialContainer = styled.div`
 
 
 export const LinkList = styled.ul`
-	border-top: 1px solid rgba(255, 255, 255, 0.1);
-  display: grid;
+	border-top: 1px solid var(--grey);
+  	display: grid;
 	grid-template-columns: repeat(3, minmax(85px, 220px));
 	gap: 40px;
-  padding: 40px 0 28px;
+  	padding: 40px 0 28px;
+	transition: .8s ease;
 
-	@media ${props => props.theme.breakpoints.lg} {
+	@media screen and (max-width: 1024px) {
 		padding: 32px 0 16px;
 	}
 
-	@media ${props => props.theme.breakpoints.md} {
+	@media screen and (max-width: 768px) {
 		width: 100%;
 		padding: 32px 0 16px;
 		gap: 16px;
 	}
-	@media ${props => props.theme.breakpoints.sm} {
+	@media screen and (max-width: 640px) {
 		width: 100%;
 		padding: 32px 4px 16px;
 		gap: 5px;
@@ -148,10 +150,11 @@ export const LinkTitle = styled.h4`
 	font-size: 12px;
 	line-height: 24px;
 	text-transform: uppercase;
-	color: rgba(255, 255, 255, 0.4);
+	color: var(--primary1);
 	margin-bottom: 16px;
+	transition: .8s ease;
 
-	@media ${props => props.theme.breakpoints.sm} {
+	@media screen and (max-width: 640px) {
 		font-size: 10px;
 		line-height: 12px;
 		margin-bottom: 8px;

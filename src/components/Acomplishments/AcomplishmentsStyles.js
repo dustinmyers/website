@@ -7,13 +7,13 @@ export const Boxes = styled.div`
   gap: 24px;
   margin: 24px 0 40px;
 
-  @media ${props => props.theme.breakpoints.md}{
+  @media screen and (max-width: 768px){
     gap: 16px;
     margin: 20px 0 32px;
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   }
 
-  @media ${props => props.theme.breakpoints.sm}{
+  @media screen and (max-width: 640px){
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
@@ -27,17 +27,17 @@ export const Box = styled.div`
   border-radius: 12px;
   height: 144px;
   padding: 24px;
-  @media ${props => props.theme.breakpoints.lg} {
+  @media screen and (max-width: 1024px) {
     height: 210px;
 
   }
 
-  @media ${props => props.theme.breakpoints.md} {
+  @media screen and (max-width: 768px) {
     height: 135px;
     padding: 16px;
   }
 
-  @media ${props => props.theme.breakpoints.sm} {
+  @media screen and (max-width: 640px) {
     height: 110px;
     padding: 12px;
     
@@ -55,11 +55,11 @@ export const BoxNum = styled.h5`
   color: #FFFFFF;
   margin-bottom: 8px;
 
-  @media ${props => props.theme.breakpoints.md} {
+  @media screen and (max-width: 768px) {
     font-size: 28px;
     line-height: 32px;
   }
-  @media ${props => props.theme.breakpoints.sm} {
+  @media screen and (max-width: 640px) {
     font-size: 24px;
     line-height: 26px;
 }
@@ -73,12 +73,12 @@ export const BoxText = styled.p`
   letter-spacing: 0.02em;
   color: rgba(255, 255, 255, 0.75);
 
-  @media ${props => props.theme.breakpoints.md}{
+  @media screen and (max-width: 768px){
     font-size: 16px;
     line-height: 20px;
   };
 
-  @media ${props => props.theme.breakpoints.sm} {
+  @media screen and (max-width: 640px) {
     font-size: 14px;
     line-height: 14px;
   }
@@ -91,13 +91,13 @@ export const Join = styled.div`
   align-items: center;
   padding-bottom: 80px;
 
-  @media ${props => props.theme.breakpoints.md}{
+  @media screen and (max-width: 768px){
     display: flex;
     justify-content: center;
     padding-bottom: 64px;
   }
 
-  @media ${props => props.theme.breakpoints.sm}{
+  @media screen and (max-width: 640px){
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -112,12 +112,12 @@ export const JoinText = styled.h5`
   letter-spacing: 0.02em;
   color: rgba(255, 255, 255, 0.5);
 
-@media ${props => props.theme.breakpoints.md}{
+@media screen and (max-width: 768px){
   line-height: 32px;
   font-size: 20px;
 };
 
-@media ${props => props.theme.breakpoints.sm}{
+@media screen and (max-width: 640px){
   font-size: 16px;
   line-height: 24px;
   margin: 0 0 16px;
@@ -127,7 +127,7 @@ export const JoinText = styled.h5`
 export const IconContainer = styled.div`
   display: flex;
 
-  @media ${props => props.theme.breakpoints.sm}{
+  @media screen and (max-width: 640px){
     width: 160px;
     justify-content: space-between;
   }

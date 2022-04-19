@@ -1,6 +1,8 @@
 import Document, { Head, Html, Main, NextScript } from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
 
+import { FallbackStyles, MagicScriptTag } from '../styles/inlineCSSVariables'
+
 export default class MyDocument extends Document {
   static async getInitialProps(ctx) {
     const sheet = new ServerStyleSheet()
@@ -42,8 +44,11 @@ export default class MyDocument extends Document {
           <meta property="twitter:title" content="Dustin Myers - React Frontend Dev" />
           <meta property="twitter:description" content="Hey there, This is Dustin Myers. I am a frontend developer passionate about ReactJS." />
           <meta property="twitter:image" content="https://i.ibb.co/h8kLzSw/Dustin-Logo.png" />
+          <FallbackStyles />
+          <script>console.log(<FallbackStyles />)</script>
         </Head>
         <body>
+          <MagicScriptTag />
           <Main />
           <NextScript />
         </body>
