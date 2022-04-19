@@ -45,7 +45,6 @@ export default class MyDocument extends Document {
           <meta property="twitter:description" content="Hey there, This is Dustin Myers. I am a frontend developer passionate about ReactJS." />
           <meta property="twitter:image" content="https://i.ibb.co/h8kLzSw/Dustin-Logo.png" />
           <FallbackStyles />
-          <script>console.log(<FallbackStyles />)</script>
         </Head>
         <body>
           <MagicScriptTag />

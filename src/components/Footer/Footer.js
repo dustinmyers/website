@@ -19,9 +19,13 @@ const Footer = () => {
           </LinkItem>
         </LinkColumn>
       </LinkList>
+      <Slogan>I will send you a sticker if you can find the bug in this site 🐛! Email me and let me know what you found.</Slogan>
+      <br/>
+      <br/>
+      <br/>
       <SocialIconsContainer>
         <CompanyContainer>
-          <Slogan>&copy; 2021 <Link href="https://dustinmyers.dev">  Dustin Myers</Link> - All rights reserved. Bonus points if you can find the bug in this site 🐛!</Slogan>
+          <Slogan>&copy; 2021 <Link href="https://dustinmyers.dev">  Dustin Myers</Link> - All rights reserved.</Slogan>
         </CompanyContainer>
         <SocialContainer>
           <SocialIcons href="https://github.com/dustinmyers">

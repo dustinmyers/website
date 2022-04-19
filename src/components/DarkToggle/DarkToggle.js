@@ -5,7 +5,7 @@ import { UserThemeContext } from '../UserThemeContext'
 
 export function DarkToggle() {
     const { colorMode, setColorMode } = useContext(UserThemeContext);
-    console.log({colorMode})
+
 
     const handleToggle = (e) => {
         e.preventDefault();

@@ -19,15 +19,13 @@ export const UserThemeProvider = ({ children }) => {
             INITIAL_COLOR_MODE_CSS_PROP
         );
 
-        console.log(initialColorValue);
-
         rawSetColorMode(initialColorValue);
     }, []);
 
     const contextValue = React.useMemo(() => {
         function setColorMode(newValue) {
             const root = window.document.documentElement;
-            console.log({newValue})
+
             localStorage.setItem(COLOR_MODE_KEY, newValue);
 
             Object.entries(COLORS).forEach(([name, colorByTheme]) => {
