@@ -5,7 +5,6 @@ CSS variables into the :root of the page before any content is
 rendered.
 */
 
-import Terser from 'terser'
 import { COLORS, COLOR_MODE_KEY, INITIAL_COLOR_MODE_CSS_PROP } from '../themes/cssVariables' 
 
 export function setColorsByTheme() {
