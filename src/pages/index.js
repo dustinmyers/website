@@ -1,12 +1,12 @@
-import Acomplishments from '../components/Acomplishments/Acomplishments';
-import BgAnimation from '../components/BackgrooundAnimation/BackgroundAnimation';
-import Hero from '../components/Hero/Hero';
-import Projects from '../components/Projects/Projects';
-import Technologies from '../components/Technologies/Technologies';
-import Timeline from '../components/TimeLine/TimeLine';
-import { Layout } from '../layout/Layout';
-import { Section } from '../styles/GlobalComponents';
-import { jobHistory, projects } from '../constants/constants';
+import Acomplishments from "../components/Acomplishments/Acomplishments";
+import BgAnimation from "../components/BackgrooundAnimation/BackgroundAnimation";
+import Hero from "../components/Hero/Hero";
+import Projects from "../components/Projects/Projects";
+import Technologies from "../components/Technologies/Technologies";
+import Timeline from "../components/TimeLine/TimeLine";
+import { Layout } from "../layout/Layout";
+import { Section } from "../styles/GlobalComponents";
+import { jobHistory, projects, openSource } from "../constants/constants";
 
 const Home = () => {
   return (
@@ -16,6 +16,7 @@ const Home = () => {
         <BgAnimation />
       </Section>
       <Projects data={jobHistory} header="Professional Work" />
+      <Projects data={openSource} header="Community Work" />
       <Projects data={projects} header="Personal Projects" />
       <Technologies />
       <Timeline />
